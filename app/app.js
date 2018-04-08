@@ -19,5 +19,5 @@ app.controller("testCtrl", function($scope, activeUserService) {
     "fname": "Nir",
     "lname": "Channes"
 })
-  $scope.bla = JSON.stringify(user);
+  //$scope.bla = JSON.stringify(user);
 })
