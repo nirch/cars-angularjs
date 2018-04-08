@@ -3,15 +3,12 @@
         "email": "nir@nir.com",
         "password": "123123",
         "fname": "Nir",
-        "lname": "Channes",
-        "data": "cars-nir.json"
-        //"cars-data": 
+        "lname": "Channes"
     },
     {
         "email": "john@doe.com",
         "password": "johnjohn",
         "fname": "John",
-        "lname": "Doe",
-        "data": "cars-john.json"
+        "lname": "Doe"
     }
 ]
