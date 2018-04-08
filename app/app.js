@@ -7,7 +7,8 @@ app.config(function($routeProvider) {
       templateUrl : "app/home/home.html"
     })
     .when("/login", {
-      templateUrl : "app/login/login.html"
+      templateUrl : "app/login/login.html",
+      controller: 'loginCtrl'
     })
 });
 
@@ -21,12 +22,12 @@ app.controller("testCtrl", function($scope, activeUserService) {
 // })
   //$scope.bla = JSON.stringify(user);
 
-  activeUserService.load().then(function() {
-    activeUserService.login("nir@nir.com", "123123");
-    //$scope.bla = JSON.stringify(activeUserService.getUser());
-    //$scope.bla = activeUserService.isLoggedIn();
-    activeUserService.logout();
-    $scope.bla = activeUserService.isLoggedIn();
-  })
+  // activeUserService.load().then(function() {
+  //   //activeUserService.login("nir@nir.com", "123123");
+  //   //$scope.bla = JSON.stringify(activeUserService.getUser());
+  //   //$scope.bla = activeUserService.isLoggedIn();
+  //   //activeUserService.logout();
+  //   //$scope.bla = activeUserService.isLoggedIn();
+  // })
   
 })
