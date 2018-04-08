@@ -1,0 +1,24 @@
+[
+    {
+      "brand" : "Toyota",
+      "model": "Corola",
+      "year": 2012,
+      "km": 130000,
+       "testDate" : "01-30-2019"
+    },
+    {
+      "brand" : "Honda",
+      "model": "Civic",
+      "year": 2002,
+      "km": 280000,
+       "testDate" : "05-20-2018"
+      
+    },
+    {
+      "brand" : "Ford",
+      "model": "Modeo",
+      "year": 2008,
+      "km": 190000,
+       "testDate" : "12-08-2018"
+    }
+  ]
