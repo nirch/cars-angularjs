@@ -52,12 +52,19 @@ app.factory("activeUserService", function ($http, $log, $q) {
         return activeUser;
     }
     
+    function isLoggedIn() {
+        return activeUser ? true : false;
+    }
 
-
+    function logout() {
+        activeUser = null;
+    }
 
     return {
         load: load,
         login: login,
-        getUser: getUser
+        getUser: getUser,
+        isLoggedIn: isLoggedIn,
+        logout: logout
     }
 })

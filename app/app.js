@@ -23,8 +23,10 @@ app.controller("testCtrl", function($scope, activeUserService) {
 
   activeUserService.load().then(function() {
     activeUserService.login("nir@nir.com", "123123");
-    $scope.bla = JSON.stringify(activeUserService.getUser());
-    
+    //$scope.bla = JSON.stringify(activeUserService.getUser());
+    //$scope.bla = activeUserService.isLoggedIn();
+    activeUserService.logout();
+    $scope.bla = activeUserService.isLoggedIn();
   })
   
 })
