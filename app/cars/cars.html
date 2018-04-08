@@ -4,6 +4,26 @@
     <h1>
         Cars
     </h1>
-    <button ng-click="testing()">Test</button>
-    {{test}}
-</div>
+    <div>  
+        <div>
+          <label for="search">Filter:</label> <input type="text" id="search" ng-model="searchText">  
+        </div>
+        
+        <table class="table">
+          <tr>
+            <th ng-click="changeSort('brand')">Brand</th>
+            <th ng-click="changeSort('model')">Model</th>
+            <th ng-click="changeSort('year')">Year</th>
+            <th ng-click="changeSort('km')">KM</th>
+            <th>Km/Year</th>
+            <th ng-click="changeSort('testDate')">Test Date</th>
+          </tr>
+          <tr ng-repeat="car in cars | filter: filterCar | orderBy: sortProp : false" ng-click="openCar(car)">
+            <td>{{car.brand}}</td>
+            <td>{{car.model}}</td>
+            <td>{{car.year}}</td>
+            <td>{{car.km | number}}</td>
+            <td>{{car.kmPerYear() | number}}</td>
+            <td>{{car.testDate | date}}</td>
+          </tr>
+        </table></div>
