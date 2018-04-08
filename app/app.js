@@ -11,8 +11,8 @@ app.config(function($routeProvider) {
       controller: 'loginCtrl'
     })
     .when('/cars', {
-      templateUrl : "app/cars/cars.html"//,
-      //controller: 'carsCtrl'
+      templateUrl : "app/cars/cars.html",
+      controller: 'carsCtrl'
     })
 });
 
