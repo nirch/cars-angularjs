@@ -1,4 +1,10 @@
 
-app.controller('navbarCtrl', function($scope) {
-    $scope.test = "blabla";
+app.controller('navbarCtrl', function($scope, activeUserService, $location) {
+    
+    $scope.logout = function() {
+        activeUserService.logout();
+        $location.path('/');
+    }
+
+
 })
