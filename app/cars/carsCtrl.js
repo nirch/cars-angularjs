@@ -24,10 +24,16 @@ app.controller('carsCtrl', function ($scope, activeUserService, $location, carSe
         // return car.brand.includes($scope.searchText) || car.model.includes($scope.searchText)
     }
 
-
+    // Sorting
     $scope.sortProp = "";
     $scope.changeSort = function (propName) {
         $scope.sortProp = propName;
     }
+
+    // Open car details
+    $scope.openCar = function (car) {
+        $location.path('/cars/' + $scope.cars.indexOf(car));
+    }
+
 
 })

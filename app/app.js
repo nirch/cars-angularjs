@@ -14,6 +14,13 @@ app.config(function($routeProvider) {
       templateUrl : "app/cars/cars.html",
       controller: 'carsCtrl'
     })
+    .when('/cars/:index' , {
+      templateUrl : "app/cars/carDetails.html",
+      controller: 'carDetailsCtrl'
+    })
+    .otherwise({
+      redirectTo: "/"
+    })
 });
 
 // TODO: Delete this later
