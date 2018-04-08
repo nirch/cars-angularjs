@@ -1,5 +1,5 @@
 
-app.controller('carsCtrl', function($scope, activeUserService, $location) {
+app.controller('carsCtrl', function($scope, activeUserService, $location, carService) {
 
     // This is an authotization check. If the user is not logged going back to the home screen
     if (!activeUserService.isLoggedIn()) {
@@ -7,6 +7,11 @@ app.controller('carsCtrl', function($scope, activeUserService, $location) {
         return;
     }
 
+    carService.load(activeUserService.getUser()).then(function() {
+        $scope.cars = carService.cars;
+    });
+
     
 
+ 
 })

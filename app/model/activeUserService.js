@@ -5,6 +5,7 @@ app.factory("activeUserService", function ($http, $log, $q) {
         this.password = plainUser.password;
         this.fname = plainUser.fname;
         this.lname = plainUser.lname;
+        this.data = plainUser.data;
     }
 
     var activeUser = null;
