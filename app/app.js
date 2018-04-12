@@ -1,5 +1,5 @@
 
-var app = angular.module('carApp', ['ngRoute']);
+var app = angular.module('carApp', ['ngRoute', 'googlechart']);
 
 app.config(function($routeProvider) {
     $routeProvider

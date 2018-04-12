@@ -20,5 +20,19 @@
       "year": 2008,
       "km": 190000,
        "testDate" : "12-08-2018"
+    },
+    {
+      "brand" : "Ford",
+      "model": "Modeo",
+      "year": 2008,
+      "km": 190000,
+       "testDate" : "12-08-2018"
+    },
+    {
+      "brand" : "Ford",
+      "model": "Modeo",
+      "year": 2008,
+      "km": 190000,
+       "testDate" : "12-08-2018"
     }
   ]
