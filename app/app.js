@@ -20,6 +20,9 @@ app.config(function($routeProvider) {
     })
     .when('/about', {
       templateUrl: "app/about/about.html"
+    }).when('/reports', {
+      templateUrl: "app/reports/reports.html",
+      controller: 'reportsCtrl'
     })
     .otherwise({
       redirectTo: "/"
