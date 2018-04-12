@@ -23,7 +23,11 @@ app.config(function($routeProvider) {
     }).when('/reports', {
       templateUrl: "app/reports/reports.html",
       controller: 'reportsCtrl'
+    }).when('/maps', {
+      templateUrl: "app/maps/maps.html",
+      controller: 'mapsCtrl'
     })
+
     .otherwise({
       redirectTo: "/"
     })
